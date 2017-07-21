@@ -1,0 +1,197 @@
+@media only screen and (max-width: 1920px), only screen and (max-device-width:1920px) {
+    html,body {
+        font-size:256px;
+    }
+}
+@media only screen and (max-width: 1080px), only screen and (max-device-width:1080px) {
+    html,body {
+        font-size:144px;
+    }
+}
+@media only screen and (max-width: 960px), only screen and (max-device-width:960px) {
+    html,body {
+        font-size:128px;
+    }
+}
+@media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
+    html,body {
+        font-size:106.666667px;
+    }
+}
+@media only screen and (max-width: 750px), only screen and (max-device-width:750px) {
+    html,body {
+        font-size:100px;
+    }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    html,body {
+        font-size:85.333333px;
+    }
+}
+@media only screen and (max-width: 600px), only screen and (max-device-width:600px) {
+    html,body {
+        font-size:80px;
+    }
+}
+@media only screen and (max-width: 540px), only screen and (max-device-width:540px) {
+    html,body {
+        font-size:72px;
+    }
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width:480px) {
+    html,body {
+        font-size:64px;
+    }
+}
+@media only screen and (max-width: 414px), only screen and (max-device-width:414px) {
+    html,body {
+        font-size:55.2px;
+    }
+}
+@media only screen and (max-width: 412px), only screen and (max-device-width:412px) {
+    html,body {
+        font-size:54.8px;
+    }
+}
+@media only screen and (max-width: 400px), only screen and (max-device-width:400px) {
+    html,body {
+        font-size:53.33333333px;
+    }
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+    html,body {
+        font-size:50px;
+    }
+}
+@media only screen and (max-width: 360px), only screen and (max-device-width:360px) {
+    html,body {
+        font-size:47.8px;
+    }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    html,body {
+        font-size:42.4px;
+    }
+}
+@media only screen and (max-width: 240px), only screen and (max-device-width:240px) {
+    html,body {
+        font-size:32px;
+    }
+}
+/* css reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#000; font-size:14px; font-family: "微软雅黑"; }
+td,th,caption { font-size:12px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:none;color: #00C6FF; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+html, body{
+	height:100%;
+}
+select {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+i{font-style: normal;}
+
+
+/*****底部导航******/
+.nav{
+    width:100%;
+    height:0.98rem;
+    margin-top:.2rem;
+}
+.nav_ul{
+    overflow: hidden;
+    z-index:101;
+	opacity:0.98;
+	position: fixed;
+	bottom:0;
+	left: 0;
+	width:100%;
+	height:0.98rem;
+    box-shadow: 0px -1px 5px #cacaca;
+    -webkit-box-shadow: 0px -1px 5px #cacaca;
+	background-color:white;
+}
+.nav_ul a{
+	float: left;
+	width:25%;
+	height:0.98rem;
+	padding-top:0.62rem;
+	font-size: 0.22rem;
+	color: #666666;
+	text-align: center;
+}
+.nav_ul a.cur {
+	color:#1287E8;
+}
+/* .nav_ul a:nth-child(1){
+	background:url("../images/home_recommend_default.png") center 0.14rem  no-repeat;
+	background-size:0.46rem;
+}
+.nav_ul a:nth-child(2){
+	background:url("../images/home_loan_default.png") center 0.14rem  no-repeat;
+	background-size:0.46rem;
+}
+.nav_ul a:nth-child(3){
+	background:url("../images/home_strategy_default.png") center 0.14rem  no-repeat;
+	background-size:0.46rem;
+}
+.nav_ul a:nth-child(4){
+	background:url("../images/home_personal_default.png") center 0.14rem  no-repeat;
+	background-size:0.46rem;
+}
+.nav_ul a:nth-child(1).cur{
+	background-image:url("../images/home_recommend_selected.png");
+}
+.nav_ul a:nth-child(2).cur{
+	background-image:url("../images/home_loan_selected.png");
+}
+.nav_ul a:nth-child(3).cur{
+	background-image:url("../images/home_strategy_selected.png");
+}
+.nav_ul a:nth-child(4).cur{
+	background-image:url("../images/home_personal_selected.png");
+} */
+
+
+/*****首页-title******/
+.header{
+	z-index:100;
+	position: fixed;
+	left: 0;
+	top:0;
+	width:100%;
+	height:1rem;
+	background: -webkit-linear-gradient(-245deg, #36C7FF 0%,#0081EB 100% );
+	background: linear-gradient(-245deg, #36C7FF 0%,#0081EB 100% );
+}
+.header_logo{
+	width:100%;
+	height:1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.34rem;
+	color: #ffffff;
+}
+.header_back{
+	position: absolute;
+	left:0.24rem;
+	top:0.31rem;
+	width:0.38rem;
+	height:0.38rem;
+	/* background:url("../images/common_icon_title_back.png") center no-repeat; */
+	background-size: 0.38rem;
+}
+.header_back1{
+	/* background:url("../images/mobile_certification_close.png") center no-repeat; */
+	background-size: 0.38rem;
+}
