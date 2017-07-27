@@ -12,10 +12,10 @@ module.exports = {
     context: path.resolve(__dirname, "src"),
     entry:{
         app: path.resolve(__dirname, './src/app.js'),
-        home: path.resolve(__dirname,'./src/home/index.js'),
-        loan: path.resolve(__dirname,'./src/loan/index.js'),
-        strategy: path.resolve(__dirname,'./src/strategy/index.js'),
-        personal: path.resolve(__dirname,'./src/personal/index.js')
+        home: path.resolve(__dirname,'./src/home/tpl.html'),
+        loan: path.resolve(__dirname,'./src/loan/tpl.html'),
+        strategy: path.resolve(__dirname,'./src/strategy/tpl.html'),
+        personal: path.resolve(__dirname,'./src/personal/tpl.html')
     },
     output:{
         filename: 'js/[name].js',
@@ -54,21 +54,23 @@ module.exports = {
         new ExtractTextPlugin("css/[name].css"),//分出css
         // new webpack.optimize.UglifyJsPlugin(),//压缩js
         // new webpack.HotModuleReplacementPlugin(),//热加载
-        new HtmlWebpackPlugin({//html插件
-            title: 'strategy',
-            filename: 'view/strategy.html',
-            // inject:false,
-            // 指定html模板
-            template: path.resolve(__dirname,'./index.html'),
-            chunks: ['app','strategy']
-        }),
+
         new HtmlWebpackPlugin({
             title: 'home',
-            // inject:false,
+            inject:'body',
             filename: 'view/home.html',
             // 指定html模板
             template: path.resolve(__dirname,'./index.html'),
-            chunks: ['app','home']
+            chunks: ['app',home]
+        }),
+        new HtmlWebpackPlugin({//html插件
+            title: 'strategy',
+            filename: 'view/strategy.html',
+            inject:'body',
+            // 指定html模板
+            template: path.resolve(__dirname,'./index.html'),
+            chunks: ['app','strategy'],
+            xhtml:true
         }),
         new HtmlWebpackPlugin({
             title: 'loan',
